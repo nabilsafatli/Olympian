@@ -9,11 +9,11 @@
 import Foundation
 import AVKit
 
-class OlympianPlayer {
+public class OlympianPlayer {
     private var avPlayer: AVPlayer!
     var url: URL?
 
-    init(with container: UIViewController, url: URL? = nil) {
+    public init(with container: UIViewController, url: URL? = nil) {
         guard let url = url else { return }
         avPlayer = AVPlayer(url: url)
         let playerViewController = AVPlayerViewController()

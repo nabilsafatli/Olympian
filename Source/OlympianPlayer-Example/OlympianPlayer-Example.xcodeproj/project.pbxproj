@@ -12,6 +12,7 @@
 		FBDB8DB622887FD5001AD051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB8DB422887FD5001AD051 /* Main.storyboard */; };
 		FBDB8DB822887FD6001AD051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDB8DB722887FD6001AD051 /* Assets.xcassets */; };
 		FBDB8DBB22887FD6001AD051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDB8DB922887FD6001AD051 /* LaunchScreen.storyboard */; };
+		FBDB8DC4228881A4001AD051 /* OlympianPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB8DC3228881A4001AD051 /* OlympianPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FBDB8DB722887FD6001AD051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDB8DBA22887FD6001AD051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBDB8DBC22887FD7001AD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB8DC3228881A4001AD051 /* OlympianPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OlympianPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDB8DC4228881A4001AD051 /* OlympianPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				FBDB8DAF22887FD5001AD051 /* OlympianPlayer-Example */,
 				FBDB8DAE22887FD5001AD051 /* Products */,
+				FBDB8DC2228881A4001AD051 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				FBDB8DBC22887FD7001AD051 /* Info.plist */,
 			);
 			path = "OlympianPlayer-Example";
+			sourceTree = "<group>";
+		};
+		FBDB8DC2228881A4001AD051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB8DC3228881A4001AD051 /* OlympianPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
