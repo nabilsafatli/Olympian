@@ -10,6 +10,7 @@
 		FBDB8D9222887BCF001AD051 /* OlympianPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */; };
 		FBDB8D9722887BCF001AD051 /* OlympianPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB8D9622887BCF001AD051 /* OlympianPlayerTests.swift */; };
 		FBDB8D9922887BCF001AD051 /* OlympianPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBDB8DA322887CC1001AD051 /* OlympianPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB8DA222887CC1001AD051 /* OlympianPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FBDB8D9122887BCF001AD051 /* OlympianPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OlympianPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB8D9622887BCF001AD051 /* OlympianPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlympianPlayerTests.swift; sourceTree = "<group>"; };
 		FBDB8D9822887BCF001AD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDB8DA222887CC1001AD051 /* OlympianPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlympianPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */,
 				FBDB8D8C22887BCF001AD051 /* Info.plist */,
+				FBDB8DA222887CC1001AD051 /* OlympianPlayer.swift */,
 			);
 			path = OlympianPlayer;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					FBDB8D8722887BCF001AD051 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					FBDB8D9022887BCF001AD051 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDB8DA322887CC1001AD051 /* OlympianPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		FBDB8D9D22887BCF001AD051 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.olympian.OlympianPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		FBDB8D9E22887BCF001AD051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		FBDB8DA022887BCF001AD051 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OlympianPlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		FBDB8DA122887BCF001AD051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OlympianPlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
