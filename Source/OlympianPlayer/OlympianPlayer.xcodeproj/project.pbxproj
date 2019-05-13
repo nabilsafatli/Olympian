@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB281C06228A182A005161BE /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB281C05228A182A005161BE /* PlayButton.swift */; };
+		FB281C08228A1ABF005161BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB281C07228A1ABF005161BE /* Assets.xcassets */; };
 		FBDB8D9222887BCF001AD051 /* OlympianPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */; };
 		FBDB8D9722887BCF001AD051 /* OlympianPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB8D9622887BCF001AD051 /* OlympianPlayerTests.swift */; };
 		FBDB8D9922887BCF001AD051 /* OlympianPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB281C05228A182A005161BE /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		FB281C07228A1ABF005161BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OlympianPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OlympianPlayer.h; sourceTree = "<group>"; };
 		FBDB8D8C22887BCF001AD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB281C04228A1813005161BE /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				FB281C05228A182A005161BE /* PlayButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		FBDB8D7E22887BCF001AD051 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +85,11 @@
 		FBDB8D8A22887BCF001AD051 /* OlympianPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				FB281C04228A1813005161BE /* Controls */,
 				FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */,
 				FBDB8D8C22887BCF001AD051 /* Info.plist */,
 				FBDB8DA222887CC1001AD051 /* OlympianPlayer.swift */,
+				FB281C07228A1ABF005161BE /* Assets.xcassets */,
 			);
 			path = OlympianPlayer;
 			sourceTree = "<group>";
@@ -181,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB281C08228A1ABF005161BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDB8DA322887CC1001AD051 /* OlympianPlayer.swift in Sources */,
+				FB281C06228A182A005161BE /* PlayButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

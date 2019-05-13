@@ -22,9 +22,11 @@ public class OlympianPlayer {
         playerViewController.player = avPlayer
         avPlayer.rate = autoPlay ? 1 : 0
         playerViewController.view.frame = playerFrame
+        playerViewController.showsPlaybackControls = false
 
-        container.addChild(playerViewController)
+        container.addChild(playerViewController)        
         container.view.addSubview(playerViewController.view)
+        container.view.addSubview(PlayButton())
         playerViewController.didMove(toParent: container)
     }
 
