@@ -12,6 +12,7 @@ import AVKit
 public class OlympianPlayer {
     private var avPlayer: AVPlayer!
     var url: URL?
+    var autoPlay: Bool = false
 
     public init(with container: UIViewController, url: URL? = nil) {
         guard let url = url else { return }
@@ -19,7 +20,7 @@ public class OlympianPlayer {
         let playerViewController = AVPlayerViewController()
         let playerFrame = CGRect(x: 0, y: 0, width: container.view.frame.width, height: container.view.frame.height)
         playerViewController.player = avPlayer
-        avPlayer.rate = 1
+        avPlayer.rate = autoPlay ? 1 : 0
         playerViewController.view.frame = playerFrame
 
         container.addChild(playerViewController)
