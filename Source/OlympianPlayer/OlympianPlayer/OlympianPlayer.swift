@@ -27,4 +27,8 @@ public class OlympianPlayer {
         container.view.addSubview(playerViewController.view)
         playerViewController.didMove(toParent: container)
     }
+
+    public func play() {
+        avPlayer.rate = 1
+    }
 }
