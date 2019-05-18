@@ -12,7 +12,7 @@ import AVKit
 public class OlympianPlayer {
     private var avPlayer: AVPlayer!
     var url: URL?
-    var autoPlay: Bool = false
+    var autoPlay: Bool = true
 
     public init(with container: UIViewController, url: URL? = nil) {
         guard let url = url else { return }
