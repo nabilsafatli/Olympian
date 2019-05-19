@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB10642822914D680023668C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10642722914D680023668C /* UIImage.swift */; };
+		FB10642A22914FDA0023668C /* MediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10642922914FDA0023668C /* MediaControl.swift */; };
 		FB281C06228A182A005161BE /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB281C05228A182A005161BE /* PlayButton.swift */; };
-		FB281C08228A1ABF005161BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB281C07228A1ABF005161BE /* Assets.xcassets */; };
+		FBDAE47A229148F700660F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB281C07228A1ABF005161BE /* Assets.xcassets */; };
 		FBDB8D9222887BCF001AD051 /* OlympianPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */; };
 		FBDB8D9722887BCF001AD051 /* OlympianPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB8D9622887BCF001AD051 /* OlympianPlayerTests.swift */; };
 		FBDB8D9922887BCF001AD051 /* OlympianPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB10642722914D680023668C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		FB10642922914FDA0023668C /* MediaControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaControl.swift; sourceTree = "<group>"; };
 		FB281C05228A182A005161BE /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		FB281C07228A1ABF005161BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OlympianPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,10 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB10642622914D1F0023668C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB10642722914D680023668C /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FB281C04228A1813005161BE /* Controls */ = {
 			isa = PBXGroup;
 			children = (
 				FB281C05228A182A005161BE /* PlayButton.swift */,
+				FB10642922914FDA0023668C /* MediaControl.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -85,6 +98,7 @@
 		FBDB8D8A22887BCF001AD051 /* OlympianPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				FB10642622914D1F0023668C /* Extensions */,
 				FB281C04228A1813005161BE /* Controls */,
 				FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */,
 				FBDB8D8C22887BCF001AD051 /* Info.plist */,
@@ -213,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB10642822914D680023668C /* UIImage.swift in Sources */,
+				FB10642A22914FDA0023668C /* MediaControl.swift in Sources */,
 				FBDB8DA322887CC1001AD051 /* OlympianPlayer.swift in Sources */,
 				FB281C06228A182A005161BE /* PlayButton.swift in Sources */,
 			);

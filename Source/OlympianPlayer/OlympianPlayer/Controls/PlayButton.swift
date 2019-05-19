@@ -13,17 +13,19 @@ class PlayButton: UIView {
         super.init(frame: frame)
         setupView()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
+    
+    func setupView() {
+        
+        guard let superView = superview else { return }
+        center = superView.convert(superView.center, from:superView)
+        frame = CGRect(x: superView.frame.size.width  / 2.0, y: superView.frame.size.height  / 2.0, width: 100, height: 300)
 
-    private func setupView() {
-        guard let width = superview?.frame.size.width, let height = superview?.frame.size.height else { return }
-        frame = CGRect(x: width  / 2.0, y: height  / 2.0, width: 300, height: 300)
-
-        guard let image =  UIImage(named: "play_circle") else { return }
+        guard let image =  UIImage.from(name: "play_circle") else { return }
         backgroundColor = UIColor(patternImage: image)
     }
 }
