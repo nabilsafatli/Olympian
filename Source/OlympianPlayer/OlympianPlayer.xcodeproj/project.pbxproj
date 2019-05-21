@@ -10,6 +10,7 @@
 		FB10642822914D680023668C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10642722914D680023668C /* UIImage.swift */; };
 		FB10642A22914FDA0023668C /* MediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10642922914FDA0023668C /* MediaControl.swift */; };
 		FB281C06228A182A005161BE /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB281C05228A182A005161BE /* PlayButton.swift */; };
+		FB2CCD6D2294A4FE006A0D53 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CCD6C2294A4FE006A0D53 /* UIView.swift */; };
 		FBDAE47A229148F700660F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB281C07228A1ABF005161BE /* Assets.xcassets */; };
 		FBDB8D9222887BCF001AD051 /* OlympianPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */; };
 		FBDB8D9722887BCF001AD051 /* OlympianPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB8D9622887BCF001AD051 /* OlympianPlayerTests.swift */; };
@@ -32,6 +33,7 @@
 		FB10642922914FDA0023668C /* MediaControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaControl.swift; sourceTree = "<group>"; };
 		FB281C05228A182A005161BE /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		FB281C07228A1ABF005161BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB2CCD6C2294A4FE006A0D53 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FBDB8D8822887BCF001AD051 /* OlympianPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OlympianPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDB8D8B22887BCF001AD051 /* OlympianPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OlympianPlayer.h; sourceTree = "<group>"; };
 		FBDB8D8C22887BCF001AD051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				FB10642722914D680023668C /* UIImage.swift */,
+				FB2CCD6C2294A4FE006A0D53 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2CCD6D2294A4FE006A0D53 /* UIView.swift in Sources */,
 				FB10642822914D680023668C /* UIImage.swift in Sources */,
 				FB10642A22914FDA0023668C /* MediaControl.swift in Sources */,
 				FBDB8DA322887CC1001AD051 /* OlympianPlayer.swift in Sources */,

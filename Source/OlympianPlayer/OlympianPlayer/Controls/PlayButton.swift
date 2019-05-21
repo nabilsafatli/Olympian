@@ -23,9 +23,11 @@ class PlayButton: UIView {
         
         guard let superView = superview else { return }
         center = superView.convert(superView.center, from:superView)
-        frame = CGRect(x: superView.frame.size.width  / 2.0, y: superView.frame.size.height  / 2.0, width: 100, height: 300)
+        frame = CGRect(x: (superView.frame.size.width  / 2.0) - 50,
+                       y: (superView.frame.size.height  / 2.0) - 50,
+                       width: 100,
+                       height: 100)
 
-        guard let image =  UIImage.from(name: "play_circle") else { return }
-        backgroundColor = UIColor(patternImage: image)
+        setBackgroundImage(name: "play_circle")
     }
 }
