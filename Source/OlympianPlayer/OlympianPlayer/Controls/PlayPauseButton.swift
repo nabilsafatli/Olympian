@@ -1,5 +1,5 @@
 //
-//  PlayButton.swift
+//  PlayPauseButton.swift
 //  OlympianPlayer
 //
 //  Created by Nabil Safatli on 2019-05-13.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-class PlayButton: UIView {
+class PlayPauseButton: UIView {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()

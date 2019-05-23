@@ -23,8 +23,8 @@ class MediaControl: UIView {
         guard let frame = superview?.frame else { return }
 
         self.frame = frame
-        let playButton = PlayButton()
-        addSubview(playButton)
-        playButton.setupView()
+        let playPauseButton = PlayPauseButton()
+        addSubview(playPauseButton)
+        playPauseButton.setupView()
     }
 }
