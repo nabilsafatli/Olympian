@@ -9,35 +9,53 @@
 import Foundation
 import AVKit
 
-public class OlympianPlayer {
+protocol PlayerActions {
+    func play()
+    func pause()
+}
+
+protocol OlympianPlayerProtocol: PlayerActions {}
+
+public class OlympianPlayer: OlympianPlayerProtocol {
     private var avPlayer: AVPlayer!
     private var playerViewController: AVPlayerViewController!
+    private var mediaControl: MediaControlling!
     var url: URL?
-    
+
     public init(with container: UIViewController,
                 url: URL? = nil,
-                autoPlay: Bool? = false) {
+                autoPlay: Bool? = true) {
         guard let url = url else { return }
         avPlayer = AVPlayer(url: url)
         playerViewController = AVPlayerViewController()
         let playerFrame = CGRect(x: 0, y: 0, width: container.view.frame.width, height: container.view.frame.height)
         playerViewController.player = avPlayer
-        
-        if let autoPlay = autoPlay {
-            avPlayer.rate = autoPlay ? 1 : 0
-        }
+
         playerViewController.view.frame = playerFrame
         playerViewController.showsPlaybackControls = false
-        
+
         container.addChild(playerViewController)
         container.view.addSubview(playerViewController.view)
         playerViewController.didMove(toParent: container)
         setupControls(in: container)
+        if let autoPlay = autoPlay, autoPlay {
+            mediaControl.play()
+        }
     }
 
     func setupControls(in container: UIViewController) {
-        let mediaControl = MediaControl()
+        mediaControl = MediaControl()
+        mediaControl.player = self
         container.view.addSubview(mediaControl)
-        mediaControl.setupView()
+        mediaControl.setup()
+    }
+
+    //MARK: - OlympianPlayerActions
+    func play() {
+        avPlayer.play()
+    }
+
+    func pause() {
+        avPlayer.pause()
     }
 }
