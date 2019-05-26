@@ -24,7 +24,7 @@ public class OlympianPlayer {
         playerViewController.player = avPlayer
         
         if let autoPlay = autoPlay {
-            avPlayer.rate = autoPlay ? 0 : 1
+            avPlayer.rate = autoPlay ? 1 : 0
         }
         playerViewController.view.frame = playerFrame
         playerViewController.showsPlaybackControls = false
