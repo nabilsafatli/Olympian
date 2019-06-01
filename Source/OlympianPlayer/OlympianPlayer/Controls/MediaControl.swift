@@ -27,9 +27,13 @@ class MediaControl: UIView, MediaControlling {
         self.frame = frame
         let playPauseButton = PlayPauseButton()
         playPauseButton.mediaControl = self
+        let fullscreenButton = FullScreenButton()
+        elements.append(fullscreenButton)
         elements.append(playPauseButton)
         addSubview(playPauseButton)
+        addSubview(fullscreenButton)
         playPauseButton.setupView()
+        fullscreenButton.setupView()
     }
 
     func play() {
