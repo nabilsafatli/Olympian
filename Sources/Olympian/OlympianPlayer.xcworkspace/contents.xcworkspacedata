@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:OlympianPlayer/OlympianPlayer.xcodeproj">
+      location = "group:../OlympianPlayer-Example/OlympianPlayer-Example.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:OlympianPlayer-Example/OlympianPlayer-Example.xcodeproj">
+      location = "group:OlympianPlayer/OlympianPlayer.xcodeproj">
    </FileRef>
 </Workspace>
